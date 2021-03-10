@@ -4,10 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
-@Route("")
 public class WcStoriesDemo extends Div {
 
 	public WcStoriesDemo() {
