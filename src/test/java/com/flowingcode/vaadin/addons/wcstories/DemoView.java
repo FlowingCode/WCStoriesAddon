@@ -9,9 +9,9 @@ import com.vaadin.flow.router.Route;
 @Route("")
 public class DemoView extends VerticalLayout implements BeforeEnterObserver {
 
-		@Override
-		public void beforeEnter(BeforeEnterEvent event) {
-			event.forwardTo(WcStoriesDemoView.class);
-		}
+	@Override
+	public void beforeEnter(BeforeEnterEvent event) {
+		event.forwardTo(WcStoriesDemoView.class);
+	}
 		
 }
