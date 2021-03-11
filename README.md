@@ -2,29 +2,42 @@
 
 Vaadin 14 Java integration of @gugadev/wc-stories
 
-## Development instructions
+## Online demo
 
-JavaScript modules can either be published as an NPM package or be kept as local 
-files in your project. The local JavaScript modules should be put in 
-`src/main/resources/META-INF/frontend` so that they are automatically found and 
-used in the using application.
+[Online demo here]()
 
-If the modules are published then the package should be noted in the component 
-using the `@NpmPackage` annotation in addition to using `@JsModule` annotation.
+## Building and running demo
+
+- git clone repository
+- mvn clean install jetty:run
+
+To see the demo, navigate to http://localhost:8080/
+
+## Release notes
 
 
-Starting the test/demo server:
-1. Run `mvn jetty:run`.
-2. Open http://localhost:8080 in the browser.
+## Issue tracking
 
-## Publishing to Vaadin Directory
+The issues for this add-on are tracked on its github.com page. All bug reports and feature requests are appreciated. 
 
-You can create the zip package needed for [Vaadin Directory](https://vaadin.com/directory/) using
-```
-mvn versions:set -DnewVersion=1.0.0 # You cannot publish snapshot versions 
-mvn install -Pdirectory
-```
+## Contributions
 
-The package is created as `target/paper-slider-1.0.0.zip`
+Contributions are welcome, but there are no guarantees that they are accepted as such. Process for contributing is the following:
 
-For more information or to upload the package, visit https://vaadin.com/directory/my-components?uploadNewComponent
+- Fork this project
+- Create an issue to this project about the contribution (bug or feature) if there is no such issue about it already. Try to keep the scope minimal.
+- Develop and test the fix or functionality carefully. Only include minimum amount of code needed to fix the issue.
+- Refer to the fixed issue in commit
+- Send a pull request for the original project
+- Comment on the original issue that you have implemented a fix for it
+
+## License & Author
+
+Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
+
+WC Stories Addon is written by Flowing Code S.A.
+
+
+# Developer Guide
+
+## Using the component
