@@ -31,7 +31,7 @@ public class WcStoriesDemo extends Div {
     	List<String> storiesPaths = Arrays.asList("/images/story_1.png", "/images/story_2.png", "/images/story_3.png", "/images/story_4.png");
     	
     	WCStories wcstories = new WCStories(storiesPaths);
-        wcstories.setHeight(658);
+        wcstories.setHeight(655);
         wcstories.setWidth(370);
         wcstories.setWithShadow(true);
         add(wcstories);
