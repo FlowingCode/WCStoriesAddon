@@ -41,3 +41,11 @@ WC Stories Addon is written by Flowing Code S.A.
 # Developer Guide
 
 ## Using the component
+
+Here is a simple example on how to try out the add-on component:
+
+```java
+WCStories wcstories = new WCStories(Arrays.asList("/images/story_1.png", "/images/story_2.png"));
+wcstories.setHeight(658);
+wcstories.setWidth(370);
+```
