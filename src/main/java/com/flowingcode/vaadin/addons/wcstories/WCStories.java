@@ -25,7 +25,6 @@ import java.util.stream.Collectors;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasComponents;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.dependency.JavaScript;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
@@ -42,10 +41,9 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 @Tag("wc-stories")
 @NpmPackage(value = "web-animations-js", version = "^2.3.1")
 @NpmPackage(value = "@gugadev/wc-stories", version = "^1.0.0")
-@JsModule("@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js")
-@JsModule("@webcomponents/webcomponentsjs/webcomponents-loader.js")
+@NpmPackage(value = "custom-elements-native-shim", version="1.0.0")
 @JsModule("web-animations-js/web-animations.min.js")
-@JavaScript("@gugadev/wc-stories/index.js")
+@JsModule("./storify/dist/index.js")
 public class WCStories extends Component implements HasComponents {
 	
 	public WCStories(List<String> storiesPaths) {
