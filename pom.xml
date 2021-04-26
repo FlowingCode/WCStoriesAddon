@@ -31,6 +31,14 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    
+    <scm>
+		<url>https://github.com/FlowingCode/WCStoriesAddon</url>
+		<connection>scm:git:git://github.com/FlowingCode/WCStoriesAddon.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/WCStoriesAddon</developerConnection>
+		<tag>master</tag>
+	</scm>
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
