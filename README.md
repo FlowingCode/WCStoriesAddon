@@ -1,6 +1,6 @@
 # WC Stories Addon
 
-Vaadin 14 Java integration of @gugadev/wc-stories
+Vaadin 14 Java integration of [@gugadev/wc-stories](https://www.npmjs.com/package/@gugadev/wc-stories)
 
 ## Online demo
 
@@ -46,6 +46,6 @@ Here is a simple example on how to try out the add-on component:
 
 ```java
 WCStories wcstories = new WCStories(Arrays.asList("/images/story_1.png", "/images/story_2.png"));
-wcstories.setHeight(658);
+wcstories.setHeight(655);
 wcstories.setWidth(370);
 ```
