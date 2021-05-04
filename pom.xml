@@ -8,7 +8,7 @@
     <description>Integration of @gugadev/wc-stories component for Vaadin 14+ platform</description>
 
     <properties>
-        <vaadin.version>14.4.0</vaadin.version>
+        <vaadin.version>14.5.3</vaadin.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
