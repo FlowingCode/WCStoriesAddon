@@ -52,42 +52,77 @@ public class WCStories extends Component implements HasComponents {
     return storiesPaths.stream().map(WCStoriesStory::new).collect(Collectors.toList());
   }
 
+  /**
+   * Sets border radius. Default radius value: 0.
+   * 
+   * @param radius
+   */
   public void setRadius(Integer radius) {
     if (radius != null) {
       this.getElement().setAttribute("radius", String.valueOf(radius));
     }
   }
 
+  /**
+   * Sets initial image index to show. Default index value: 0.
+   * 
+   * @param startAt
+   */
   public void setStartAt(Integer startAt) {
     if (startAt != null) {
       this.getElement().setAttribute("startAt", String.valueOf(startAt));
     }
   }
 
+  /**
+   * Sets visibility time of images and animation. Default value: 5000.
+   * 
+   * @param duration
+   */
   public void setDuration(Integer duration) {
     if (duration != null) {
       this.getElement().setAttribute("duration", String.valueOf(duration));
     }
   }
 
+  /**
+   * Sets stories height. Default value: 480px.
+   * 
+   * @param height
+   */
   public void setHeight(Integer height) {
     if (height != null) {
       this.getElement().setAttribute("height", String.valueOf(height));
     }
   }
 
+  /**
+   * Sets stories width. Default value: 320px.
+   * 
+   * @param width
+   */
   public void setWidth(Integer width) {
     if (width != null) {
       this.getElement().setAttribute("width", String.valueOf(width));
     }
   }
 
+  /**
+   * Enable or disable shadow in the container. Default value: disabled (false).
+   * 
+   * @param withShadow
+   */
   public void setWithShadow(Boolean withShadow) {
     if (withShadow != null) {
       this.getElement().setAttribute("withShadow", withShadow);
     }
   }
 
+  /**
+   * Add the {@link WCStoriesStory stories/images} to the container.
+   * 
+   * @param stories
+   */
   public void setStories(List<WCStoriesStory> stories) {
     for (int i = 0; i < stories.size(); i++) {
       this.addComponentAtIndex(i, stories.get(i));

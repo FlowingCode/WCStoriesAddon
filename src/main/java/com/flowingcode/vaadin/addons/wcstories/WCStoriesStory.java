@@ -23,7 +23,7 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
 
 /**
- * Represents each story component.
+ * Represents each story component. It shows an image.
  *
  * @author Paola De Bartolo / Flowing Code
  */
@@ -40,10 +40,20 @@ public class WCStoriesStory extends Component {
     this(src, null);
   }
 
+  /**
+   * Sets the image relative or absolute path.
+   * 
+   * @param src
+   */
   public void setSrc(String src) {
     this.getElement().setAttribute("src", src);
   }
 
+  /**
+   * Sets an image URL or a base64 string.
+   * 
+   * @param placeholder
+   */
   public void setPlaceholder(String placeholder) {
     if (placeholder != null) {
       this.getElement().setAttribute("placeholder", placeholder);
