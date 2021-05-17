@@ -4,7 +4,11 @@ Vaadin 14 Java integration of [@gugadev/wc-stories](https://www.npmjs.com/packag
 
 ## Online demo
 
-[Online demo here]()
+[Online demo here](https://addonsv14.flowingcode.com/wcstories)
+
+## Download release
+
+[Available in Vaadin Directory](https://vaadin.com/directory/component/wc-stories-addon)
 
 ## Building and running demo
 
@@ -15,6 +19,7 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
+See [here](https://github.com/FlowingCode/WCStoriesAddon/releases)
 
 ## Issue tracking
 
