@@ -17,10 +17,17 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "baseUrl": "frontend",
+    "paths": {
+      "Frontend/*": [
+        "*"
+      ]
+    }
   },
   "include": [
-    "frontend/**/*.ts", "frontend/index.js"
+    "frontend/**/*.ts",
+    "types.d.ts"
   ],
   "exclude": []
 }
