@@ -19,10 +19,16 @@
  */
 package com.flowingcode.vaadin.addons.wcstories;
 
+import com.flowingcode.vaadin.addons.demo.DemoSource;
 import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 import java.util.Arrays;
 import java.util.List;
 
+@PageTitle("WCStories Demo")
+@DemoSource
+@Route(value = "wcstories/wcstories", layout = WcStoriesDemoView.class)
 @SuppressWarnings("serial")
 public class WcStoriesDemo extends Div {
 
