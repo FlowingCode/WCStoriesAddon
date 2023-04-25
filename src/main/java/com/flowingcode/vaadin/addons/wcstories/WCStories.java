@@ -39,6 +39,8 @@ import java.util.stream.Collectors;
 @NpmPackage(value = "web-animations-js", version = "^2.3.1")
 @NpmPackage(value = "@gugadev/wc-stories", version = "^1.0.0")
 @NpmPackage(value = "custom-elements-native-shim", version = "1.0.0")
+@NpmPackage(value = "@types/express-serve-static-core", version = "4.17.30")
+@NpmPackage(value = "@types/express", version = "4.17.14")
 @JsModule("web-animations-js/web-animations.min.js")
 @JsModule("./storify/dist/index.js")
 public class WCStories extends Component implements HasComponents {
