@@ -22,10 +22,12 @@ package com.flowingcode.vaadin.addons.wcstories;
 import com.flowingcode.vaadin.addons.DemoLayout;
 import com.flowingcode.vaadin.addons.GithubLink;
 import com.flowingcode.vaadin.addons.demo.TabbedDemo;
+import com.vaadin.flow.router.ParentLayout;
 import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
-@Route(value = "wcstories", layout = DemoLayout.class)
+@ParentLayout(DemoLayout.class)
+@Route("wcstories")
 @GithubLink("https://github.com/FlowingCode/WCStoriesAddon")
 public class WcStoriesDemoView extends TabbedDemo {
 
