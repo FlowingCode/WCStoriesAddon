@@ -3,7 +3,7 @@
 
     <groupId>org.vaadin.addons.flowingcode</groupId>
     <artifactId>wcstories-addon</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>WC Stories Addon</name>
     <description>Integration of @gugadev/wc-stories component for Vaadin 14+ platform</description>
 
@@ -36,7 +36,7 @@
 		<url>https://github.com/FlowingCode/WCStoriesAddon</url>
 		<connection>scm:git:git://github.com/FlowingCode/WCStoriesAddon.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/WCStoriesAddon</developerConnection>
-		<tag>wcstories-addon-1.0.1</tag>
+		<tag>master</tag>
 	</scm>
     
     <dependencyManagement>
