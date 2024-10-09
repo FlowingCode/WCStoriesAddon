@@ -36,8 +36,8 @@ import java.util.stream.Collectors;
  */
 @SuppressWarnings("serial")
 @Tag("wc-stories")
-@NpmPackage(value = "web-animations-js", version = "^2.3.1")
-@NpmPackage(value = "@gugadev/wc-stories", version = "^1.0.0")
+@NpmPackage(value = "web-animations-js", version = "2.3.2")
+@NpmPackage(value = "@gugadev/wc-stories", version = "1.0.0")
 @NpmPackage(value = "custom-elements-native-shim", version = "1.0.0")
 @JsModule("web-animations-js/web-animations.min.js")
 @JsModule("./storify/dist/index.js")
