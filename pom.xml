@@ -468,8 +468,8 @@
 			<properties>
 				<maven.compiler.source>17</maven.compiler.source>
 				<maven.compiler.target>17</maven.compiler.target>
-				<vaadin.version>24.2.6</vaadin.version>
-				<jetty.version>11.0.12</jetty.version>
+				<vaadin.version>24.5.0</vaadin.version>
+				<jetty.version>11.0.20</jetty.version>
 			</properties>
 			<repositories>
 				<repository>
@@ -491,7 +491,36 @@
 					<version>6.0.0</version>
 					<scope>provided</scope>
 				</dependency>
+				<dependency>
+					<groupId>com.flowingcode.vaadin.addons.demo</groupId>
+					<artifactId>commons-demo</artifactId>
+					<version>4.1.0</version>
+					<scope>test</scope>
+				</dependency>
 			</dependencies>
+
+			<build>
+				<plugins>
+					<plugin>                    
+						<groupId>org.eclipse.jetty</groupId>
+						<artifactId>jetty-maven-plugin</artifactId>
+						<version>${jetty.version}</version>
+						<configuration>
+							<scan>3</scan>
+							<useTestScope>true</useTestScope>
+							<webApp>
+								<resourceBases>
+									<resourceBase>src/test/resources/META-INF/resources</resourceBase>
+									<resourceBase>src/main/resources/META-INF/resources</resourceBase>
+								</resourceBases>
+							</webApp>
+							<supportedPackagings>
+								<supportedPackaging>jar</supportedPackaging>
+							</supportedPackagings>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 		
     </profiles>
