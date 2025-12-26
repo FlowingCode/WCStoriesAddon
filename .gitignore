@@ -19,3 +19,5 @@ vite.generated.ts
 vite.config.ts
 /src/main/dev-bundle
 /src/main/bundles
+/src/main/frontend/generated
+/src/main/frontend/index.html
