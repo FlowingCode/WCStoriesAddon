@@ -7,6 +7,13 @@
 
 Vaadin Flow Java integration of [@gugadev/wc-stories](https://www.npmjs.com/package/@gugadev/wc-stories)
 
+## Supported versions
+
+| Vaadin Version | Add-on Version |
+|---|---|
+| 23-25 | 2.x |
+| 14 | 1.x |
+
 ## Online demo
 
 [Online demo here](https://addonsv24.flowingcode.com/wcstories)
